@@ -1,16 +1,46 @@
 # quick_service
 
-A new Flutter project.
+A simple home cleaning service booking application built with Flutter.
 
-## Getting Started
+# Time Spent
+Approximately 2 hours
 
-This project is a starting point for a Flutter application.
+# State Management Approach
+I used the Provider package for state management because it's simple and easy to understand for beginners. The BookingState class holds all the booking information (selected date, time, and duration) and uses notifyListeners() to update the UI whenever something changes. It's like having a shopping cart that remembers your selections and automatically updates the screen when you add or remove items.
 
-A few resources to get you started if this is your first Flutter project:
+-- Install Dependencies
+```bash
+flutter pub get
+```
+-- Run the App
+```bash
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Project Architecture
+```
+lib/
+├── main.dart                          # App entry point
+├── models/
+│   ├── provider_model.dart            # Card provider data model
+│   └── booking_state.dart             # Booking state management
+├── screens/
+│   ├── provider_list_screen.dart      # Home screen with provider list
+│   └── booking_screen.dart            # Booking screen
+└── widgets/
+    └── provider_card.dart   
+    └── loading_shimmer.dart           # Loading shimmer widget
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+
+### image one
+![simulator one](assets/image_one.png)
+
+### image two
+![simulator two](assets/image_two.png)
+
+### image three
+![simulator three](assets/image_three.png)
+
+
