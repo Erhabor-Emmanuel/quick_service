@@ -48,6 +48,6 @@ class BookingState extends ChangeNotifier {
     selectedDate = null;
     selectedTime = null;
     selectedDuration = 1;
-    notifyListeners(); // This tells Flutter to refresh the screen
+    notifyListeners();
   }
 }
