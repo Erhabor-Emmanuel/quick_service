@@ -13,13 +13,13 @@ class BookingState extends ChangeNotifier {
 
   void selectDate(DateTime date) {
     selectedDate = date;
-    notifyListeners(); // This tells Flutter to refresh the screen
+    notifyListeners();
   }
 
-  // When user picks a time, save it and update the screen
+
   void selectTime(String time) {
     selectedTime = time;
-    notifyListeners(); // This tells Flutter to refresh the screen
+    notifyListeners();
   }
 
   // When user picks duration (1, 2, or 3 hours)
