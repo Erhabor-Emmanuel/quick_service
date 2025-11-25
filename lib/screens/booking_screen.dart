@@ -248,10 +248,7 @@ class BookingScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-
                   const SizedBox(height: 24),
-
-                  // Total Price display
                   Container(
                     margin: const EdgeInsets.symmetric(horizontal: 16),
                     padding: const EdgeInsets.all(16),
@@ -282,8 +279,6 @@ class BookingScreen extends StatelessWidget {
                   ),
 
                   const SizedBox(height: 24),
-
-                  // Confirm button (disabled until date and time are selected)
                   Padding(
                     padding: const EdgeInsets.all(16),
                     child: SizedBox(
