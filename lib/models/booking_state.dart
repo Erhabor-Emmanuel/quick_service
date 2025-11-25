@@ -33,8 +33,7 @@ class BookingState extends ChangeNotifier {
     return bookedSlots.contains(time);
   }
 
-  // Check if user can click the confirm button
-  // They can only confirm if they picked both date AND time
+
   bool canConfirm() {
     return selectedDate != null && selectedTime != null;
   }
