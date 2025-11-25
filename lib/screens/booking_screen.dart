@@ -150,10 +150,7 @@ class BookingScreen extends StatelessWidget {
                       },
                     ),
                   ),
-
                   const SizedBox(height: 24),
-
-                  // "Select Time" title
                   const Padding(
                     padding: EdgeInsets.symmetric(horizontal: 16),
                     child: Text(
@@ -165,8 +162,6 @@ class BookingScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 12),
-
-                  // Time slots in a grid (2 columns)
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: GridView.builder(
