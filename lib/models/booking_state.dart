@@ -7,10 +7,10 @@ class BookingState extends ChangeNotifier {
   String? selectedTime;
   int selectedDuration = 1;
 
-  // These time slots are already booked (not available)
+
   List<String> bookedSlots = ['11:00 AM', '3:00 PM', '7:00 PM'];
 
-  // When user picks a date, save it and update the screen
+
   void selectDate(DateTime date) {
     selectedDate = date;
     notifyListeners(); // This tells Flutter to refresh the screen
