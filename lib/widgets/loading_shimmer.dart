@@ -76,7 +76,18 @@ class LoadingCardShimmer extends StatelessWidget {
               ),
             ),
 
-
+            Shimmer.fromColors(
+              baseColor: Colors.grey.shade300,
+              highlightColor: Colors.grey.shade100,
+              child: Container(
+                height: 32,
+                width: 60,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(4),
+                  color: Colors.white,
+                ),
+              ),
+            ),
           ],
         ),
       ),
