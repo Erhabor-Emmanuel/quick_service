@@ -32,6 +32,33 @@ lib/
     └── loading_shimmer.dart           # Loading shimmer widget
 ```
 
+## Features
+# Provider List Screen
+- **Displays 10 service providers with profile images, names, ratings, and hourly rates**
+- **Search functionality to filter providers by name**
+- **Verification badge for verified providers**
+- **Loading state with 1-second delay**
+- **Book button navigates to booking screen**
+
+# Booking Screen
+- **Provider summary at the top**
+- **Date selector showing next 7 days**
+- **Time slot grid (6 slots) with some marked as booked**
+- **Duration dropdown (1-3 hours)**
+- **Dynamic price calculation**
+- **Confirm button (disabled until date and time are selected)**
+- **Success dialog showing booking details**
+
+# Notes
+- **Used Provider for state management to keep code easy to understand**
+- **All mock data is hardcoded in the models**
+- **No complex animations or external APIs to keep within 2-hour timeframe**
+- **Focused on clean, readable code with clear comments**
+
+# If I Had More Time
+- **Add more filtering options (by price, rating, etc.)**
+- **Create a favorites/saved providers feature**
+
 ## Screenshots
 
 ### image one
