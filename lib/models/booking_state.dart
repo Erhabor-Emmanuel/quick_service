@@ -22,13 +22,13 @@ class BookingState extends ChangeNotifier {
     notifyListeners();
   }
 
-  // When user picks duration (1, 2, or 3 hours)
+
   void selectDuration(int duration) {
     selectedDuration = duration;
-    notifyListeners(); // This tells Flutter to refresh the screen
+    notifyListeners();
   }
 
-  // Check if a time slot is already booked
+
   bool isTimeBooked(String time) {
     return bookedSlots.contains(time);
   }
