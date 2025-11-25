@@ -102,7 +102,6 @@ class BookingScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 12),
 
-                  // Horizontal list of next 7 days
                   SizedBox(
                     height: 80,
                     child: ListView.builder(
