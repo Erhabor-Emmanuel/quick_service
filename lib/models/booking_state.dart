@@ -38,13 +38,12 @@ class BookingState extends ChangeNotifier {
     return selectedDate != null && selectedTime != null;
   }
 
-  // Calculate the total price
-  // Formula: hourly rate × number of hours
+
   double calculateTotal(double hourlyRate) {
     return hourlyRate * selectedDuration;
   }
 
-  // Clear everything (reset to default)
+
   void reset() {
     selectedDate = null;
     selectedTime = null;
