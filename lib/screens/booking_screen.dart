@@ -287,7 +287,6 @@ class BookingScreen extends StatelessWidget {
                       child: ElevatedButton(
                         onPressed: bookingState.canConfirm()
                             ? () async {
-                          // Show loading spinner for 0.5 seconds
                           showDialog(
                             context: context,
                             barrierDismissible: false,
@@ -300,9 +299,8 @@ class BookingScreen extends StatelessWidget {
 
                           await Future.delayed(const Duration(milliseconds: 500));
 
-                          Navigator.pop(context); // Close loading
+                          Navigator.pop(context);
 
-                          // Show success popup
                           showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
