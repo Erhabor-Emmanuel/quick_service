@@ -210,10 +210,7 @@ class BookingScreen extends StatelessWidget {
                       },
                     ),
                   ),
-
                   const SizedBox(height: 24),
-
-                  // "Duration" title
                   const Padding(
                     padding: EdgeInsets.symmetric(horizontal: 16),
                     child: Text(
@@ -225,8 +222,6 @@ class BookingScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 12),
-
-                  // Dropdown to select 1, 2, or 3 hours
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Container(
