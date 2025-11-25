@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import '../models/provider_model.dart';
 import '../widgets/loading_shimmer.dart';
 import '../widgets/provider_card.dart';
+import 'booking_screen.dart';
 
 
 
@@ -115,7 +116,14 @@ class ProviderListScreen extends StatelessWidget {
                       return ProviderCard(
                         provider: provider,
                         onBookPressed: () {
-
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => BookingScreen(
+                                provider: provider,
+                              ),
+                            ),
+                          );
                         },
                       );
                     },
